@@ -28,7 +28,11 @@ export default function LoginPage({ onSwitchToRegister }: { onSwitchToRegister: 
     if (!validateForm()) return;
     try {
       setLoading(true);
-      const data = await apiRequest<{ user: any; token: string }>('/auth/login', 'POST', formData);
+      const data = await apiRequest<{ user: any; token: string }>(
+        '/auth/login', // backend route matches app.use('/api/auth', ...)
+        'POST',
+        formData
+      );
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
       window.location.reload();
