@@ -9,7 +9,7 @@ const noteRoutes = require('./routes/noteRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: 'https://mern-student-notes-app-1.onrender.com', credentials: true }));
 app.use(express.json());
 
 // Connect to MongoDB
