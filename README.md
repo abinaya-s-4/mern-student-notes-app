@@ -4,6 +4,11 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application for managing st
 Features secure JWT authentication, RESTful API design, and deployment with separate frontend and backend hosting.
 
 ---
+## Screenshots of Working Website
+![Alt text](mern-student-notes-app/images/final.png)
+![Alt text](mern-student-notes-app/images/login.png)
+![Alt text](mern-student-notes-app/images/register.png)
+![Alt text](mern-student-notes-app/images/notes.png)
 
 ## 📌 Project Description
 
