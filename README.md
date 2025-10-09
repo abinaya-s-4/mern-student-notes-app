@@ -5,10 +5,14 @@ Features secure JWT authentication, RESTful API design, and deployment with sepa
 
 ---
 ## Screenshots of Working Website
-![Alt text](mern-student-notes-app/images/final.png)
-![Alt text](mern-student-notes-app/images/login.png)
-![Alt text](mern-student-notes-app/images/register.png)
-![Alt text](mern-student-notes-app/images/notes.png)
+![Alt text](images/final.png)
+
+![Alt text](images/login.png)
+
+![Alt text](images/register.png)
+
+![Alt text](images/notes.png)
+
 
 ## 📌 Project Description
 
