@@ -39,7 +39,7 @@ The project demonstrates:
 ---
 
 ## 🛠️ Tech Stack
-- Frontend: React, Vite, JavaScript, Tailwind CSS
+- Frontend: React, JavaScript, CSS
 - Backend: Node.js, Express, JWT, Mongoose (MongoDB)
 - Deployment: Render (backend and static frontend)
 - Authentication: JWT
