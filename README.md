@@ -61,7 +61,7 @@ Key points:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/abinaya-s-4/mern-student-notes-app.git
+git clone https://github.com/abinaya-s-4/mern-student-notes-app
 cd mern-student-notes-app
 ```
 
@@ -72,7 +72,7 @@ cd mern-student-notes-app
 ### 2. Navigate to the backend
 
 ```bash
-cd backend
+cd server
 ```
 
 ### 3. Install dependencies
@@ -83,11 +83,12 @@ npm install
 
 ### 4. Create environment variables (backend)
 
-Create a `.env` file inside the `backend` folder:
+Create a `.env` file inside the `server` folder:
 
 ```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+FRONTEND_URL=http://localhost:5173  
 PORT=5000
 ```
 
@@ -112,7 +113,7 @@ http://localhost:5000
 ### 6. Navigate to the frontend
 
 ```bash
-cd ../frontend
+cd ../client
 ```
 
 ### 7. Install dependencies
@@ -123,10 +124,10 @@ npm install
 
 ### 8. Create environment variables (frontend)
 
-Create a `.env` file inside the `frontend` folder:
+Create a `.env` file inside the `client` folder:
 
 ```
-VITE_API_BASE_URL=http://localhost:5000
+API_BASE_URL=http://localhost:5000
 ```
 
 > Update the URL when deploying.
