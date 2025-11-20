@@ -1,63 +1,163 @@
-# mern-student-tasks-notes-app
+# MERN Student Tasks & Notes Application
 
-A full-stack MERN (MongoDB, Express, React, Node.js) application for managing student notes and tasks.  
-Features secure JWT authentication, RESTful API design, and deployment with separate frontend and backend hosting.
+A full-stack MERN (MongoDB, Express, React, Node.js) application for managing student notes and tasks with secure authentication and a responsive interface. The project includes protected backend APIs, JWT-based user access, and independently deployed frontend and backend services.
 
 ---
-## Screenshots of Working Website
-![Alt text](images/final.png)
 
-![Alt text](images/login.png)
+## Screenshots
 
-![Alt text](images/register.png)
-
+![Alt text](images/final.png)  
+![Alt text](images/login.png)  
+![Alt text](images/register.png)  
 ![Alt text](images/notes.png)
 
+---
 
-## 📌 Project Description
+## Project Overview
 
-This application enables users to register, log in, and manage personal notes and tasks through a responsive React frontend and a secure Node.js/Express backend connected to MongoDB.  
-The backend provides protected CRUD endpoints for notes, ensuring data security and persistence.  
+This application enables users to create and manage personal notes and tasks with secure signup and login.  
+The backend uses Node.js and Express with MongoDB Atlas for persistence, and the frontend uses React + Vite for a responsive UI.
 
-The project demonstrates:
-- Full-stack integration with React and Express
-- Authentication and authorization using JWT
-- REST API design principles
-- Deployment pipelines using Render
+Key points:
+
+- JWT authentication and authorization  
+- Protected CRUD endpoints for notes  
+- RESTful API architecture  
+- Responsive React frontend  
+- Deployment ready (Render)
 
 ---
 
-## ✨ Key Features
+## Features
 
-- **JWT Authentication** – Secure user signup and login
-- **CRUD Operations** – Create, read, update, delete notes
-- **RESTful API** – Node.js + Express with MongoDB Atlas
-- **Responsive Frontend** – Built with React and Vite
-- **Environment Configurations** – Local and production-ready
-- **Cloud Deployment** – Render-hosted backend and frontend
-
----
-
-## 🛠️ Tech Stack
-- Frontend: React, JavaScript, CSS
-- Backend: Node.js, Express, JWT, Mongoose (MongoDB)
-- Deployment: Render (backend and static frontend)
-- Authentication: JWT
-- Database: MongoDB Atlas
-- API calls from frontend using fetch with credentials support
+- Secure user authentication (JWT)  
+- Create, read, update, delete notes  
+- Responsive UI built with React  
+- RESTful backend using Express and Mongoose  
+- MongoDB Atlas as the database  
+- Environment-based configuration  
+- API calls using `fetch` with credential support  
 
 ---
 
-## 🚀 Deployment
+## Tech Stack
 
-- **Backend:** https://mern-student-notes-app.onrender.com
-- **Frontend:** https://mern-student-notes-app-1.onrender.com
-
+**Frontend:** React, JavaScript, Vite, CSS  
+**Backend:** Node.js, Express, JWT, Mongoose  
+**Database:** MongoDB Atlas  
+**Hosting:** Render  
 
 ---
 
-## 🖥️ Local Setup
+## Deployment
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/abinaya-s-4/mern-student-notes-app.git
+**Backend:** https://mern-student-notes-app.onrender.com  
+**Frontend:** https://mern-student-notes-app-1.onrender.com  
+
+---
+
+## Local Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/abinaya-s-4/mern-student-notes-app.git
+cd mern-student-notes-app
+```
+
+---
+
+## Backend Setup
+
+### 2. Navigate to the backend
+
+```bash
+cd backend
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Create environment variables (backend)
+
+Create a `.env` file inside the `backend` folder:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+```
+
+> Do not commit `.env` or real secrets to the repository.
+
+### 5. Start the backend
+
+```bash
+npm start
+```
+
+Backend runs at:
+
+```
+http://localhost:5000
+```
+
+---
+
+## Frontend Setup
+
+### 6. Navigate to the frontend
+
+```bash
+cd ../frontend
+```
+
+### 7. Install dependencies
+
+```bash
+npm install
+```
+
+### 8. Create environment variables (frontend)
+
+Create a `.env` file inside the `frontend` folder:
+
+```
+VITE_API_BASE_URL=http://localhost:5000
+```
+
+> Update the URL when deploying.
+
+### 9. Start the frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Redeployment Instructions
+
+1. Push new changes to GitHub.  
+2. Rebuild the backend on Render.  
+3. Rebuild the frontend on Render.  
+4. Verify environment variables.  
+5. Update frontend API URL to the deployed backend URL.  
+
+---
+
+## Notes
+
+- Never commit `.env` files.  
+- Add `backend/.env` and `frontend/.env` to `.gitignore`.  
+- MongoDB Atlas connection is required for backend functionality.
+
