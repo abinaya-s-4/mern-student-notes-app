@@ -1,4 +1,4 @@
-# MERN Student Tasks & Notes Application
+# NOTIVA
 
 A full-stack MERN (MongoDB, Express, React, Node.js) application for managing student notes and tasks with secure authentication and a responsive interface. The project includes protected backend APIs, JWT-based user access, and independently deployed frontend and backend services.
 
